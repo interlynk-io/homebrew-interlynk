@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-class SbomQS < Formula 
+class Sbomqs < Formula 
     desc "sbomqs provides quality metrics for SBOMs"
     homepage "https://github.com/interlynk-io/sbomqs"
     version "0.0.7"
