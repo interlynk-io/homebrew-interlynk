@@ -15,13 +15,13 @@
 class Sbomqs < Formula 
     desc "sbomqs provides quality metrics for SBOMs"
     homepage "https://github.com/interlynk-io/sbomqs"
-    version "0.0.7"
+    version "0.0.8"
     license "Apache-2.0"
 
     on_macos do 
         if Hardware::CPU.intel?
-            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.7/sbomqs-darwin-amd64", :using => :nounzip
-            sha256 "998aa8dd712e96582acf04780d3fa525770e5ffd9d002854a534e464eea5ead1"
+            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.8/sbomqs-darwin-amd64", :using => :nounzip
+            sha256 "880d3fc7a4fdfa3be7721c4ddf3c82aefcc4c91ce5c7b74f7cd622746aae856e"
 
             def install
                 bin.install "sbomqs-darwin-amd64" => "sbomqs"
@@ -31,8 +31,8 @@ class Sbomqs < Formula
 
     on_linux do 
         if Hardware::CPU.intel?
-            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.7/sbomqs-linux-amd64", :using => :nounzip
-            sha256 "b667fd5a55112bdfc181bba70a24e4ee9bc0bbe74489827f79477a4a62c292ad"
+            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.8/sbomqs-linux-amd64", :using => :nounzip
+            sha256 "3d17dfa903172adb65e980518ec7aaca33806e6d0fbc129afddda7225eedf165"
 
             def install
                 bin.install "sbomqs-linux-amd64" => "sbomqs"
