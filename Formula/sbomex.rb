@@ -25,7 +25,7 @@ class Sbomex < Formula
       sha256 "f5d03494b9284e6e5b4d2d654a25590b1c13cd13f6582a5d8174fe9c90a89019"
 
       def install
-        bin.install "sbomex-darwin-amd64" => "sbomex-darwin-amd64"
+        bin.install "sbomex-darwin-amd64" => "sbomex"
       end
     end
     if Hardware::CPU.arm?
@@ -33,7 +33,7 @@ class Sbomex < Formula
       sha256 "e7dcff5ce110da0693d9c0e8f4d5a2ee3f0e9169e56858d07f191285341306dd"
 
       def install
-        bin.install "sbomex-darwin-arm64" => "sbomex-darwin-arm64"
+        bin.install "sbomex-darwin-arm64" => "sbomex"
       end
     end
   end
@@ -44,7 +44,7 @@ class Sbomex < Formula
       sha256 "a0bf5377212f50ed9ee79d7e8e0728aaeb48ed053b27f2731566ccfeedcae420"
 
       def install
-        bin.install "sbomex-linux-arm64" => "sbomex-linux-arm64"
+        bin.install "sbomex-linux-arm64" => "sbomex"
       end
     end
     if Hardware::CPU.intel?
@@ -52,7 +52,7 @@ class Sbomex < Formula
       sha256 "e3bd9c5dfbf7a77697b7d3b342e26d0fef68768352296155d40a532a2fe6e946"
 
       def install
-        bin.install "sbomex-linux-amd64" => "sbomex-linux-amd64"
+        bin.install "sbomex-linux-amd64" => "sbomex"
       end
     end
   end
