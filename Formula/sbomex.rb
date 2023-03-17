@@ -22,7 +22,7 @@ class Sbomex < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.1/sbomex-darwin-amd64" :using => :nounzip
-      sha256 "f5d03494b9284e6e5b4d2d654a25590b1c13cd13f6582a5d8174fe9c90a89019"
+      sha256 "bcbb7c0684c57e5eb4fe40fec0336c65a7cbe967e23ce902837cb3ea094df0a8"
 
       def install
         bin.install "sbomex-darwin-amd64" => "sbomex"
@@ -30,7 +30,7 @@ class Sbomex < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.1/sbomex-darwin-arm64" :using => :nounzip
-      sha256 "e7dcff5ce110da0693d9c0e8f4d5a2ee3f0e9169e56858d07f191285341306dd"
+      sha256 "fe0c268d35d1f359c602a4314ac97d340725afedb3c10205493dae3883ad7d44"
 
       def install
         bin.install "sbomex-darwin-arm64" => "sbomex"
@@ -41,7 +41,7 @@ class Sbomex < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.1/sbomex-linux-arm64" :using => :nounzip
-      sha256 "a0bf5377212f50ed9ee79d7e8e0728aaeb48ed053b27f2731566ccfeedcae420"
+      sha256 "0857afd121e7d2036946ba516a0023b9811c34dee07f7523bb48b39c0ea98123"
 
       def install
         bin.install "sbomex-linux-arm64" => "sbomex"
@@ -49,7 +49,7 @@ class Sbomex < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.1/sbomex-linux-amd64" :using => :nounzip
-      sha256 "e3bd9c5dfbf7a77697b7d3b342e26d0fef68768352296155d40a532a2fe6e946"
+      sha256 "1cd260104383fc1c2d7fcab7cb033e80ca4d42df2a9fb8c7a76e0fff25f1c40b"
 
       def install
         bin.install "sbomex-linux-amd64" => "sbomex"
