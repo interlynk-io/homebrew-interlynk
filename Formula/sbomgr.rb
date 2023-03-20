@@ -24,7 +24,7 @@ class Sbomgr < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.0/sbomgr-darwin-arm64", using: NoUnzipCurlDownloadStrategy
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.1/sbomgr-darwin-arm64", using: NoUnzipCurlDownloadStrategy
       sha256 "cb8101e5b28b0e8f66aa7647c107b645a18081ddb08518bb0bd9cc0eb847b97d"
 
       def install
@@ -32,7 +32,7 @@ class Sbomgr < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.0/sbomgr-darwin-amd64", using: NoUnzipCurlDownloadStrategy
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.1/sbomgr-darwin-amd64", using: NoUnzipCurlDownloadStrategy
       sha256 "9bd6f458b61c53c492d17dfa0c2062967be1bd46260548fbc157f1be044e76d4"
 
       def install
@@ -43,7 +43,7 @@ class Sbomgr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.0/sbomgr-linux-arm64", using: NoUnzipCurlDownloadStrategy
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.1/sbomgr-linux-arm64", using: NoUnzipCurlDownloadStrategy
       sha256 "713a4e5e3d49ea37439bb5c889daf288fef0b087e1747371e923d71cd9015c54"
 
       def install
@@ -51,7 +51,7 @@ class Sbomgr < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.0/sbomgr-linux-amd64", using: NoUnzipCurlDownloadStrategy
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.1/sbomgr-linux-amd64", using: NoUnzipCurlDownloadStrategy
       sha256 "8fe812985fe4854ff6ce189a3598edd399acf2fb04450b51152258c15a7dd763"
 
       def install
