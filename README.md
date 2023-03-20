@@ -12,3 +12,5 @@ This repo is the homebrew taps repo for Interlynk products
 # Sbomex installation
 `brew install sbomex`
 
+# Sbomgr installation
+`brew install sbomgr`
