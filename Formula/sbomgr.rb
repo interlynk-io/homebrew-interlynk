@@ -19,7 +19,7 @@
 class Sbomgr < Formula
   desc "SBOM Grep - Search through SBOMs"
   homepage "https://github.com/interlynk-io/sbomgr"
-  version "SNAPSHOT-aad196e"
+  version "v0.0.1"
   license "Apache-2.0"
 
   on_macos do
