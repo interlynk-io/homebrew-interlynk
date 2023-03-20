@@ -24,7 +24,7 @@ class Sbomgr < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.1/sbomgr-darwin-arm64", using: NoUnzipCurlDownloadStrategy
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.1/sbomgr-darwin-arm64", :using => :nounzip
       sha256 "cb8101e5b28b0e8f66aa7647c107b645a18081ddb08518bb0bd9cc0eb847b97d"
 
       def install
