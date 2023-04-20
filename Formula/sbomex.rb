@@ -16,7 +16,7 @@
 class Sbomex < Formula
   desc "sbomex is a command line utility to help query and pull from Interlynk public SBOM"
   homepage "https://github.com/interlynk-io/sbomex"
-  version "0.0.4
+  version "0.0.4"
   license "Apache-2.0"
 
   on_macos do
