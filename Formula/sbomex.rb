@@ -16,21 +16,21 @@
 class Sbomex < Formula
   desc "sbomex is a command line utility to help query and pull from Interlynk public SBOM"
   homepage "https://github.com/interlynk-io/sbomex"
-  version "0.0.5"
+  version "v0.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.5/sbomex-darwin-amd64", :using => :nounzip
-      sha256 "90c1a9bcf0baa1ebb1df03df3dc0744339a55b8ca1a2c43e590e538318c36b62"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.6/sbomex-darwin-amd64", :using => :nounzip
+      sha256 "077fcd5740e7465d1e0738f176e9bb5b895027c3c3a7d22f1cb08c7f8cc6e500"
 
       def install
         bin.install "sbomex-darwin-amd64" => "sbomex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.5/sbomex-darwin-arm64", :using => :nounzip
-      sha256 "e95b2c69cdce89a5b71245eee5b6bfb65de62cc1d890715090e64b63d1829ff2"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.6/sbomex-darwin-arm64", :using => :nounzip
+      sha256 "bae79056c7664c8c7b2502753a5750f0e5c0157b53ba489d6bbd7048eff5184f"
 
       def install
         bin.install "sbomex-darwin-arm64" => "sbomex"
@@ -40,8 +40,8 @@ class Sbomex < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.5/sbomex-linux-amd64", :using => :nounzip
-      sha256 "043daf822eeacd6be47729ac22f0fc3b6dd37b24f58fe23c91db348cbcafebf0"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.6/sbomex-linux-amd64", :using => :nounzip
+      sha256 "464b2e1ca24d0dae4f863aeeec142da382dc15ec00ad6d0f5d165d1f9f1bb293"
 
       def install
         bin.install "sbomex-linux-amd64" => "sbomex"
