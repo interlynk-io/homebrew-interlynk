@@ -51,7 +51,7 @@ class Sbomqs < Formula
             sha256 "2f0cc8113a31d53e5dabb152f0655a85e4caad5ce67a4b4f8bbc0eca4b133788"
 
             def install
-                bin.install "sbomqs-darwin-arm64" => "sbomqs"
+                bin.install "sbomqs-linux-arm64" => "sbomqs"
             end
         end
     end
