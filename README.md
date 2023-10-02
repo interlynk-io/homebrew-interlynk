@@ -1,17 +1,46 @@
 # homebrew-interlynk
 
-This repo is the homebrew taps repo for Interlynk products
+This repo is the list of homebrew taps for Interlynk open-source tools
 
-`brew tap interlynk-io/interlynk`
+### Add or Update Interlynk tap
+```sh
+brew tap interlynk-io/interlynk
+```
 
-# Sbomqs installation
-`brew install sbomqs`
+or update the tap to the latest formulae
+```sh
+brew update
+```
 
-# Sbomex installation
-`brew install sbomex`
+### Sbomqs installation
+```sh
+brew install sbomqs
+```
 
-# Sbomgr installation
-`brew install sbomgr`
+### Sbomex installation
+```sh
+brew install sbomex
+```
 
-# Sbomasm installation
-`brew install sbomasm`
+### Sbomgr installation
+```sh
+brew install sbomgr
+```
+
+### Sbomasm installation
+```sh
+brew install sbomasm
+```
+
+### Interlynk SBOM Open Source tools
+- [SBOM Assembler](https://github.com/interlynk-io/sbomasm) - A tool to compose a single SBOM by combining other (part) SBOMs
+- [SBOM Quality Score](https://github.com/interlynk-io/sbomqs) - A tool for evaluating the quality and completeness of SBOMs
+- [SBOM Search Tool](https://github.com/interlynk-io/sbomagr) - A tool to grep style semantic search in SBOMs
+- [SBOM Explorer](https://github.com/interlynk-io/sbomex) - A tool for discovering and downloading SBOM from a public repository
+
+### Contact 
+We appreciate all feedback. The best ways to get in touch with us:
+- :phone: [Live Chat](https://www.interlynk.io/#hs-chat-open)
+- 📫 [Email Us](mailto:hello@interlynk.io)
+- 🐛 [Report a bug or enhancement](https://github.com/interlynk-io/sbomex/issues) 
+- :x: [Follow us on X](https://twitter.com/InterlynkIo)
