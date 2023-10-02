@@ -25,7 +25,7 @@ class Sbomgr < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-darwin-arm64", :using => :nounzip
-      sha256 "9604db65e2bac234a95c7c3b055ff69962265ee66422aa252175d325e5114d98"
+      sha256 "d0e48e008598b7d2eb8aa2f3084cf61565ddb770c5589014ada1db86d3f504aa"
 
       def install
         bin.install "sbomgr-darwin-arm64" => "sbomgr"
@@ -33,7 +33,7 @@ class Sbomgr < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-darwin-amd64", :using => :nounzip
-      sha256 "849a5126b4a85d4b968e41d7e0e8b667b34204141a957159a573326e5b0a1f48"
+      sha256 "f4f1daa92f27579eeadcb0d0c675acd9764583b38751107d0e8cda5f16eabc6f"
 
       def install
         bin.install "sbomgr-darwin-amd64" => "sbomgr"
@@ -44,7 +44,7 @@ class Sbomgr < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-linux-arm64", :using => :nounzip
-      sha256 "21d2c83df04ab56ea32fbcc2aef955268fdc20482e0d792d5d4e81b8ab322486"
+      sha256 "cc530bb570193e62f2ea74a98fbc87eeedde72e977ece1e6e9d25cbd871b5477"
 
       def install
         bin.install "sbomgr-linux-arm64" => "sbomgr"
@@ -52,7 +52,7 @@ class Sbomgr < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-linux-amd64", :using => :nounzip
-      sha256 "74b58d3373e69140d26a3a9fcebd4b5c44d77e73f8e5b75ccdb09257a5af6c3f"
+      sha256 "2451bbac4065637583a6ac55d2f69a7b0302309bf34d0bf099a5320d88f363db"
 
       def install
         bin.install "sbomgr-linux-amd64" => "sbomgr"
