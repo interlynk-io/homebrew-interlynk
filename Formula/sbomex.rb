@@ -16,21 +16,21 @@
 class Sbomex < Formula
   desc "sbomex is a command line utility to help query and pull from Interlynk public SBOM"
   homepage "https://github.com/interlynk-io/sbomex"
-  version "v0.0.9"
+  version "v0.0.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.9/sbomex-darwin-amd64", :using => :nounzip
-      sha256 "ecb8c4a5a311f4e51e729ed4dbe786c6d71923d36187ef3cedc4fb8f2c5a1784"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-darwin-amd64", :using => :nounzip
+      sha256 "849a5126b4a85d4b968e41d7e0e8b667b34204141a957159a573326e5b0a1f48"
 
       def install
         bin.install "sbomex-darwin-amd64" => "sbomex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.9/sbomex-darwin-arm64", :using => :nounzip
-      sha256 "4c34d89351611d6a85f3183d4738b09a091cd44460f8403df945bda7fc4e3363"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-darwin-arm64", :using => :nounzip
+      sha256 "9604db65e2bac234a95c7c3b055ff69962265ee66422aa252175d325e5114d98"
 
       def install
         bin.install "sbomex-darwin-arm64" => "sbomex"
@@ -39,8 +39,16 @@ class Sbomex < Formula
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-linux-arm64", :using => :nounzip
+      sha256 "21d2c83df04ab56ea32fbcc2aef955268fdc20482e0d792d5d4e81b8ab322486"
+
+      def install
+        bin.install "sbomex-linux-arm64" => "sbomex"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.9/sbomex-linux-amd64", :using => :nounzip
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-linux-amd64", :using => :nounzip
       sha256 "dec3c7a3a029cce1f7a5cec0304e99cee75bab0a3fa84f8175b7453e66b8f8d6"
 
       def install
