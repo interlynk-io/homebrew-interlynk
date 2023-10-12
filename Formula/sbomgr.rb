@@ -19,21 +19,21 @@
 class Sbomgr < Formula
   desc "SBOM Grep - Search through SBOMs"
   homepage "https://github.com/interlynk-io/sbomgr"
-  version "v0.0.10"
+  version "v0.0.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-darwin-arm64", :using => :nounzip
-      sha256 "d0e48e008598b7d2eb8aa2f3084cf61565ddb770c5589014ada1db86d3f504aa"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.11/sbomgr-darwin-arm64", :using => :nounzip
+      sha256 "403bccf6720551190e20b7364dc81d83f1145bf8eaa8ff453f3b23d4970bfbce"
 
       def install
         bin.install "sbomgr-darwin-arm64" => "sbomgr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-darwin-amd64", :using => :nounzip
-      sha256 "f4f1daa92f27579eeadcb0d0c675acd9764583b38751107d0e8cda5f16eabc6f"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.11/sbomgr-darwin-amd64", :using => :nounzip
+      sha256 "2da4501cf47a2a171f54bc315863415fea7f4b77bd4ddf12db23175f60bc614d"
 
       def install
         bin.install "sbomgr-darwin-amd64" => "sbomgr"
@@ -43,16 +43,16 @@ class Sbomgr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-linux-arm64", :using => :nounzip
-      sha256 "cc530bb570193e62f2ea74a98fbc87eeedde72e977ece1e6e9d25cbd871b5477"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.11/sbomgr-linux-arm64", :using => :nounzip
+      sha256 "56927bf11c96f55e6d543e881a14a584eac5f97a6d1a1a80b0b0bf78f8c95c53"
 
       def install
         bin.install "sbomgr-linux-arm64" => "sbomgr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.10/sbomgr-linux-amd64", :using => :nounzip
-      sha256 "2451bbac4065637583a6ac55d2f69a7b0302309bf34d0bf099a5320d88f363db"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v0.0.11/sbomgr-linux-amd64", :using => :nounzip
+      sha256 "4973f68cff54059ba98e21449dd93a695053b2e4d5fd8d4eb4480ce5bdb03e37"
 
       def install
         bin.install "sbomgr-linux-amd64" => "sbomgr"
