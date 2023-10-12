@@ -16,21 +16,21 @@
 class Sbomex < Formula
   desc "sbomex is a command line utility to help query and pull from Interlynk public SBOM"
   homepage "https://github.com/interlynk-io/sbomex"
-  version "v0.0.10"
+  version "v0.0.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-darwin-amd64", :using => :nounzip
-      sha256 "849a5126b4a85d4b968e41d7e0e8b667b34204141a957159a573326e5b0a1f48"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.11/sbomex-darwin-amd64", :using => :nounzip
+      sha256 "76b023a351b3212510bb7e0a75db1140f83451336508b91e136894b53f9312c5"
 
       def install
         bin.install "sbomex-darwin-amd64" => "sbomex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-darwin-arm64", :using => :nounzip
-      sha256 "9604db65e2bac234a95c7c3b055ff69962265ee66422aa252175d325e5114d98"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.11/sbomex-darwin-arm64", :using => :nounzip
+      sha256 "66502723d8bba523389ce1384eb7f67544a18b69e894cbe7455e60b1fefb6980"
 
       def install
         bin.install "sbomex-darwin-arm64" => "sbomex"
@@ -40,16 +40,16 @@ class Sbomex < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-linux-arm64", :using => :nounzip
-      sha256 "21d2c83df04ab56ea32fbcc2aef955268fdc20482e0d792d5d4e81b8ab322486"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.11/sbomex-linux-arm64", :using => :nounzip
+      sha256 "59a0e6d5a110a098d2c1bd50b19f60f522eb87ab24b69da4e5a96c1645432293"
 
       def install
         bin.install "sbomex-linux-arm64" => "sbomex"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.10/sbomex-linux-amd64", :using => :nounzip
-      sha256 "dec3c7a3a029cce1f7a5cec0304e99cee75bab0a3fa84f8175b7453e66b8f8d6"
+      url "https://github.com/interlynk-io/sbomex/releases/download/v0.0.11/sbomex-linux-amd64", :using => :nounzip
+      sha256 "8cb79e5b238bf4f98142590e7ce0dc9d267214158ea1e6933ec779a5645a698c"
 
       def install
         bin.install "sbomex-linux-amd64" => "sbomex"
