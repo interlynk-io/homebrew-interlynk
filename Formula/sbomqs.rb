@@ -15,21 +15,21 @@
 class Sbomqs < Formula
     desc "sbomqs quality score for sboms"
     homepage "https://github.com/interlynk-io/sbomqs"
-    version "v0.0.29"
+    version "v0.0.30"
     license "Apache-2.0"
 
     on_macos do
         if Hardware::CPU.intel?
-            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.29/sbomqs-darwin-amd64", :using => :nounzip
-            sha256 "46bbf4ba9466dced2a522d3723c0c4c97c56c0161b2fcb28ba4de41d80f01719"
+            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.30/sbomqs-darwin-amd64", :using => :nounzip
+            sha256 "f5d49a39fe9bfa54bcdbd0a6a4951258f759487009e8fbfa7292ff77bd06fd36"
 
             def install
                 bin.install "sbomqs-darwin-amd64" => "sbomqs"
             end
         end
         if Hardware::CPU.arm?
-            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.29/sbomqs-darwin-arm64", :using => :nounzip
-            sha256 "aa4fa0b4612effbd30fba3435ca78b41289e311384df6705af54f072da0ab25d"
+            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.30/sbomqs-darwin-arm64", :using => :nounzip
+            sha256 "db4b406422936bff07ee335fb25073f601d1952f6f580c5f714c42793510f5e6"
 
             def install
                 bin.install "sbomqs-darwin-arm64" => "sbomqs"
@@ -39,16 +39,16 @@ class Sbomqs < Formula
 
     on_linux do
         if Hardware::CPU.intel?
-            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.29/sbomqs-linux-amd64", :using => :nounzip
-            sha256 "0d79f685de4d38dfce35b6fa61ad71363896476336cdabaf5009fb2e460cf50a"
+            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.30/sbomqs-linux-amd64", :using => :nounzip
+            sha256 "c436242a6d9ba8991c21bf821f3bdd6730a19d621487f729ac6a967f4b680749"
 
             def install
                 bin.install "sbomqs-linux-amd64" => "sbomqs"
             end
         end
         if Hardware::CPU.arm?
-            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.29/sbomqs-linux-arm64", :using => :nounzip
-            sha256 "00975454844ae8d3b76f0f9c152e741fb6f6ddff6735540b4d5e19e33ca8b160"
+            url "https://github.com/interlynk-io/sbomqs/releases/download/v0.0.30/sbomqs-linux-arm64", :using => :nounzip
+            sha256 "bc23243c8a2d980029ce318c593fe73230c9077cf992eed8fe2583a328325691"
 
             def install
                 bin.install "sbomqs-linux-arm64" => "sbomqs"
