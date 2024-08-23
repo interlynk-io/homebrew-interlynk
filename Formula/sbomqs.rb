@@ -50,7 +50,7 @@ class Sbomqs < Formula
     end
     if Hardware::CPU.arm?
       url 'https://github.com/interlynk-io/sbomqs/releases/download/v0.1.9/sbomqs-linux-arm64', using: :nounzip
-      sha256 '14b8383a5778492c9d86e47dacd64d129d03eebd0eaeb6b8e59265c85e5f7c27`
+      sha256 '14b8383a5778492c9d86e47dacd64d129d03eebd0eaeb6b8e59265c85e5f7c27'
 
       def install
         bin.install 'sbomqs-linux-arm64' => 'sbomqs'
