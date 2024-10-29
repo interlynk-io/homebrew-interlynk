@@ -19,21 +19,21 @@
 class Sbomasm < Formula
   desc "SBOM Assembler - Assembler & Edit for your SBOMs"
   homepage "https://github.com/interlynk-io/sbomasm"
-  version "v0.1.8"
+  version "v0.1.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.8/sbomasm-darwin-arm64", :using => :nounzip
-      sha256 "d7e96dc638d956153cf0706f61230fcd9786e9793a1254cf1b8475255f7548c1"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.9/sbomasm-darwin-arm64", :using => :nounzip
+      sha256 "86750e1d9ef333c167c3d5baaeb58b731ee6e253ef972b2aae853246e994e19c"
 
       def install
         bin.install "sbomasm-darwin-arm64" => "sbomasm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.8/sbomasm-darwin-amd64", :using => :nounzip
-      sha256 "5de288a84018123e1b2d9b1165320930b28e286f7777da78146db42227c83786"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.9/sbomasm-darwin-amd64", :using => :nounzip
+      sha256 "d036e375b4a4347ef76af4b9a6120a0ba24db66d441b9c275dc1feefbd2cc2d5"
 
       def install
         bin.install "sbomasm-darwin-amd64" => "sbomasm"
@@ -43,16 +43,16 @@ class Sbomasm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.8/sbomasm-linux-arm64", :using => :nounzip
-      sha256 "7979cc4e4a60e8ec0bc98a3b645eca6d2670745c1892cb7b4b795e9a469b3a1b"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.9/sbomasm-linux-arm64", :using => :nounzip
+      sha256 "b4d539d970b3a541a310f02145f52adbaa164c4208ffa51cab3ec611a24afd01"
 
       def install
         bin.install "sbomasm-linux-arm64" => "sbomasm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.8/sbomasm-linux-amd64", :using => :nounzip
-      sha256 "9909c1bf2f9dff0a53f68665655f8ea7b7e6cfa9ce21a4a0a2be68dde917f29a"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/v0.1.9/sbomasm-linux-amd64", :using => :nounzip
+      sha256 "4c27add769c85d3fee864ea840eb58a415cdfad81c3ed2cf38209a3854850f13"
 
       def install
         bin.install "sbomasm-linux-amd64" => "sbomasm"
