@@ -22,7 +22,7 @@ class Sbommv < Formula
       if Hardware::CPU.intel?
         url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.1/sbommv-darwin-amd64",
             using: :nounzip
-        sha256 "<SHA256_sbommv-darwin-amd64>"
+        sha256 "ab0c3d5aa909d763727ef5a49585617a5c06f3c5655ba21d8255f43b9567247c"
   
         def install
           bin.install "sbommv-darwin-amd64" => "sbommv"
@@ -31,7 +31,7 @@ class Sbommv < Formula
       if Hardware::CPU.arm?
         url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.1/sbommv-darwin-arm64",
             using: :nounzip
-        sha256 "<SHA256_sbommv-darwin-arm64>"
+        sha256 "23e7990c2e4f5a51c85a45c6eb0a822a3c4d4ef0746403c3b67f9ba9deb568c2"
   
         def install
           bin.install "sbommv-darwin-arm64" => "sbommv"
@@ -42,7 +42,7 @@ class Sbommv < Formula
     on_linux do
       if Hardware::CPU.intel?
         url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.1/sbommv-linux-amd64", using: :nounzip
-        sha256 "<SHA256_sbommv-linux-amd64>"
+        sha256 "232a5203e2adafcf82486f8188fba7ed91438bb79084b410c6926e0c3b4a551f"
   
         def install
           bin.install "sbommv-linux-amd64" => "sbommv"
@@ -50,7 +50,7 @@ class Sbommv < Formula
       end
       if Hardware::CPU.arm?
         url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.1/sbommv-linux-arm64", using: :nounzip
-        sha256 "<SHA256__sbommv-linux-arm64>"
+        sha256 "5dbcbbadb53d71a4ff2584261a99dbcb5a93abb19531d6c993c9a18284dd910d"
   
         def install
           bin.install "sbommv-linux-arm64" => "sbommv"
