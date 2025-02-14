@@ -15,23 +15,23 @@
 class Sbomqs < Formula
   desc 'sbomqs quality score for sboms'
   homepage 'https://github.com/interlynk-io/sbomqs'
-  version 'v1.0.0'
+  version 'v1.0.1'
   license 'Apache-2.0'
 
   on_macos do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.0/sbomqs-darwin-amd64',
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.1/sbomqs-darwin-amd64',
           using: :nounzip
-      sha256 '9cb1bc37d295d6144e97d860907b86dba21cf16145e6cc3f1ce4318748651415'
+      sha256 '3f2f1e015e7193b620f2ba46c93279624b0d5ac8d0f83f52c53902561ffd2369'
 
       def install
         bin.install 'sbomqs-darwin-amd64' => 'sbomqs'
       end
     end
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.0/sbomqs-darwin-arm64',
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.1/sbomqs-darwin-arm64',
           using: :nounzip
-      sha256 'd83640770a28ea809a3fe22d3a709bbf3ebc3f97ec98ce3c7c1f07a738eb5f63'
+      sha256 '2c934ba9092a1eb3ba7139539c58e15acf7923d416d6c8a8bdf372e58a7defc7'
 
       def install
         bin.install 'sbomqs-darwin-arm64' => 'sbomqs'
@@ -41,16 +41,16 @@ class Sbomqs < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.0/sbomqs-linux-amd64', using: :nounzip
-      sha256 '9cf038f739563932af96b8a9b5ae055df45f414794d5a5f31afc9ad9963aabdd'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.1/sbomqs-linux-amd64', using: :nounzip
+      sha256 '2f91b69924228a509cae781883a98634afa47172326e353f9993146aac4f2c56'
 
       def install
         bin.install 'sbomqs-linux-amd64' => 'sbomqs'
       end
     end
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.0/sbomqs-linux-arm64', using: :nounzip
-      sha256 'aebfba3d3b83558e7219a787426448153542a1455997f426682636c80ae07615'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.0.1/sbomqs-linux-arm64', using: :nounzip
+      sha256 '4cbcd77c242bd45e97d3eca1d2fc0f7693956ee0ef8be178223fbfde360d2a28'
 
       def install
         bin.install 'sbomqs-linux-arm64' => 'sbomqs'
