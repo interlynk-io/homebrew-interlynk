@@ -15,23 +15,23 @@
 class Sbommv < Formula
     desc "SBOM Transfer Tool - Move SBOMs seamlessly between different systems"
     homepage "https://github.com/interlynk-io/sbommv"
-    version "v0.0.6"
+    version "v0.0.7"
     license "Apache-2.0"
   
     on_macos do
       if Hardware::CPU.intel?
-        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.6/sbommv-darwin-amd64",
+        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.7/sbommv-darwin-amd64",
             using: :nounzip
-        sha256 "b589cd1fc42d3bb29b65533bf02dc80189c1e573271316e824907e37bcdd584a"
+        sha256 "032797dc2cfa72baf22485546b82c99c12017c870b75aef7f1cac386400653b1"
   
         def install
           bin.install "sbommv-darwin-amd64" => "sbommv"
         end
       end
       if Hardware::CPU.arm?
-        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.6/sbommv-darwin-arm64",
+        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.7/sbommv-darwin-arm64",
             using: :nounzip
-        sha256 "029c6d06baa01483bf6fe68e733560a67a72a6089940d7b75759df78eb371471"
+        sha256 "6cb7af442caf95be74e77af29d4e98a85f29a36e22a72981e84537c2c63f4e73"
   
         def install
           bin.install "sbommv-darwin-arm64" => "sbommv"
@@ -41,16 +41,16 @@ class Sbommv < Formula
   
     on_linux do
       if Hardware::CPU.intel?
-        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.6/sbommv-linux-amd64", using: :nounzip
-        sha256 "a1d68d56420ab5cabb75fcb94dceb55f2da14adc068ea45f81993957c9a63675"
+        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.7/sbommv-linux-amd64", using: :nounzip
+        sha256 "7198762d1652a6edfe8d2688fd69f25ab8f4de765801dabf38cc544dbfc222ed"
   
         def install
           bin.install "sbommv-linux-amd64" => "sbommv"
         end
       end
       if Hardware::CPU.arm?
-        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.6/sbommv-linux-arm64", using: :nounzip
-        sha256 "09ea285279da04938fff0be2a35cb381ed72346e2889e1182dbb369127808b2c"
+        url "https://github.com/interlynk-io/sbommv/releases/download/v0.0.7/sbommv-linux-arm64", using: :nounzip
+        sha256 "4218eaabbd0932e25f9af3aaa32cc393fdceac5470eded236c0f71b62a2eee87"
   
         def install
           bin.install "sbommv-linux-arm64" => "sbommv"
