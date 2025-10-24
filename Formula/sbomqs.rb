@@ -13,25 +13,25 @@
 # limitations under the License.
 
 class Sbomqs < Formula
-  desc 'SBOM Assess - Evaluate SBOM quality and compliance'
+  desc 'sbomqs: The Comprehensive SBOM Quality & Compliance Tool'
   homepage 'https://github.com/interlynk-io/sbomqs'
-  version 'v1.1.0'
+  version 'v1.2.0'
   license 'Apache-2.0'
 
   on_macos do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.1.0/sbomqs-darwin-amd64',
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.2.0/sbomqs-darwin-amd64',
           using: :nounzip
-      sha256 'ec2d08c0725c3fc1b99884e2eb8a4f61ba0ad08e38eec8636e15a21cb79280a2'
+      sha256 '272ebe341d3d7d884d49b6081c6817b7c6773e99f5d8da2b762127c54f745bb1'
 
       def install
         bin.install 'sbomqs-darwin-amd64' => 'sbomqs'
       end
     end
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.1.0/sbomqs-darwin-arm64',
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.2.0/sbomqs-darwin-arm64',
           using: :nounzip
-      sha256 '00420a83355bae8f2a9643ec6c9fc40047dc5bfce5b754281bdb64721b9e162e'
+      sha256 'c351579032e4fcdec2b45426b2d563f11739aa09fe927c13ea8597e21126c5c2'
 
       def install
         bin.install 'sbomqs-darwin-arm64' => 'sbomqs'
@@ -41,8 +41,8 @@ class Sbomqs < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.1.0/sbomqs-linux-amd64', using: :nounzip
-      sha256 '85ca0367fc89ef3be40f74a5f1644ca5d4e5b51e992672f2803011bbefc35af9'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.2.0/sbomqs-linux-amd64', using: :nounzip
+      sha256 'cb042f081656d8d9c646ff89ffe02cbbaa71ac858edd36e54c1554438a435bde'
 
       def install
         bin.install 'sbomqs-linux-amd64' => 'sbomqs'
@@ -50,7 +50,7 @@ class Sbomqs < Formula
     end
     if Hardware::CPU.arm?
       url 'https://github.com/interlynk-io/sbomqs/releases/download/v1.1.0/sbomqs-linux-arm64', using: :nounzip
-      sha256 '5d5d4a49665a7fe64a8145e3946b63cf3e78c8f421a987da278716372bb82dc2'
+      sha256 '53340be5f8f747aa185a40790b131fbda476778bb4c4c548c14f9d5dfa1eeabe'
 
       def install
         bin.install 'sbomqs-linux-arm64' => 'sbomqs'
