@@ -25,7 +25,7 @@ class Sbomasm < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/interlynk-io/sbomasm/releases/download/v2.0.0/sbomasm_2.0.0_Darwin_arm64.tar.gz"
-      sha256 "sha256:866c1e511ebd127e4f9b629d127cb9462e3394725defd93361ddc9dec08be7eb"
+      sha256 "866c1e511ebd127e4f9b629d127cb9462e3394725defd93361ddc9dec08be7eb"
 
       def install
         bin.install "sbomasm"
@@ -34,7 +34,7 @@ class Sbomasm < Formula
 
     if Hardware::CPU.intel?
       url "https://github.com/interlynk-io/sbomasm/releases/download/v2.0.0/sbomasm_2.0.0_Darwin_x86_64.tar.gz"
-      sha256 "sha256:5a2a161fa20cdd0331f0658f14204abeb5b659ef0ffaa2a5e8895a6c84b24ce9"
+      sha256 "5a2a161fa20cdd0331f0658f14204abeb5b659ef0ffaa2a5e8895a6c84b24ce9"
 
       def install
         bin.install "sbomasm"
@@ -45,7 +45,7 @@ class Sbomasm < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/interlynk-io/sbomasm/releases/download/v2.0.0/sbomasm_2.0.0_Linux_arm64.tar.gz"
-      sha256 "sha256:ee152e201a142656d896a927079bb7451993ec0f9d03125416ff965a4e26e2d2"
+      sha256 "ee152e201a142656d896a927079bb7451993ec0f9d03125416ff965a4e26e2d2"
 
       def install
         bin.install "sbomasm"
@@ -53,8 +53,8 @@ class Sbomasm < Formula
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v1.0.9/sbomasm_1.0.9_Linux_x86_64.tar.gz"
-      sha256 "sha256:3fdefca7ede51728f371a060cb8aa8f4f088829d2ff3b7aee41e66aa22e64672"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/v2.0.0/sbomasm_2.0.0_Linux_x86_64.tar.gz"
+      sha256 "3fdefca7ede51728f371a060cb8aa8f4f088829d2ff3b7aee41e66aa22e64672"
 
       def install
         bin.install "sbomasm"

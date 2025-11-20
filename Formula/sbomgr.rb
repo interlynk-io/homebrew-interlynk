@@ -61,6 +61,6 @@ class Sbomgr < Formula
   end
 
   test do
-    system "#{bin}/sbomgr" "version"
+    system "#{bin}/sbomgr", "version"
   end
 end
