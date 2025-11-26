@@ -24,7 +24,7 @@ class Sbomqs < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.0_Darwin_x86_64.tar.gz'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Darwin_x86_64.tar.gz'
       sha256 'd3b2e172d6216602a378f562b590ca46bfb4ab5a7b3306b6af9741619b9b0591'
 
       def install
@@ -33,7 +33,7 @@ class Sbomqs < Formula
     end
 
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.0_Darwin_arm64.tar.gz'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Darwin_arm64.tar.gz'
       sha256 'eeebd76a0a5a610fdd1aeac1caba15ce84f37de5bbc27e32f56d8a8c548bff70'
 
       def install
@@ -44,7 +44,7 @@ class Sbomqs < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.0_Linux_x86_64.tar.gz'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Linux_x86_64.tar.gz'
       sha256 '5fb80ddafab94fc09ff2b157306676fd7840ef6b46d3811bde20f226aed83e77'
 
       def install
@@ -53,7 +53,7 @@ class Sbomqs < Formula
     end
 
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.0_Linux_arm64.tar.gz'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Linux_arm64.tar.gz'
       sha256 '23447cd4e8bd24a8ab68b374d384b32d50bd43e039b0fdf3926bd539652a7fce'
 
       def install
