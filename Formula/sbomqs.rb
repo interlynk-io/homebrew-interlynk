@@ -19,13 +19,13 @@
 class Sbomqs < Formula
   desc 'sbomqs: The Comprehensive SBOM Quality & Compliance Tool'
   homepage 'https://github.com/interlynk-io/sbomqs'
-  version 'v2.0.1'
+  version 'v2.0.2'
   license 'Apache-2.0'
 
   on_macos do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Darwin_x86_64.tar.gz'
-      sha256 'd3b2e172d6216602a378f562b590ca46bfb4ab5a7b3306b6af9741619b9b0591'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.2/sbomqs_2.0.2_Darwin_x86_64.tar.gz'
+      sha256 'fcca18f721fd6ca33b21c4640076b92b2e3cad66a1adfe42571b8bff6f619f55'
 
       def install
         bin.install 'sbomqs'
@@ -33,8 +33,8 @@ class Sbomqs < Formula
     end
 
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Darwin_arm64.tar.gz'
-      sha256 'eeebd76a0a5a610fdd1aeac1caba15ce84f37de5bbc27e32f56d8a8c548bff70'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.2/sbomqs_2.0.2_Darwin_arm64.tar.gz'
+      sha256 'dbd7e91f34dfe1b72e39fecdc1fc5c22a482a2770ed72f58795a32abde76f7b2'
 
       def install
         bin.install 'sbomqs'
@@ -44,8 +44,8 @@ class Sbomqs < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Linux_x86_64.tar.gz'
-      sha256 '5fb80ddafab94fc09ff2b157306676fd7840ef6b46d3811bde20f226aed83e77'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.2/sbomqs_2.0.2_Linux_x86_64.tar.gz'
+      sha256 'f4f6bf5368ea116c113cf94bbd0858e407c6f119cdd803174ab7fcd9aeb75d8c'
 
       def install
         bin.install 'sbomqs'
@@ -53,8 +53,8 @@ class Sbomqs < Formula
     end
 
     if Hardware::CPU.arm?
-      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.1/sbomqs_2.0.1_Linux_arm64.tar.gz'
-      sha256 '23447cd4e8bd24a8ab68b374d384b32d50bd43e039b0fdf3926bd539652a7fce'
+      url 'https://github.com/interlynk-io/sbomqs/releases/download/v2.0.2/sbomqs_2.0.2_Linux_arm64.tar.gz'
+      sha256 'ded2b27864b2a2640af1dbf62215c9b940d1899499da1a90bdc3f21d5a3d1043'
 
       def install
         bin.install 'sbomqs'
