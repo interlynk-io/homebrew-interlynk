@@ -5,7 +5,7 @@
 class Sbomasm < Formula
   desc "SBOM assembler, merger, and editor toolkit"
   homepage "https://github.com/interlynk-io/sbomasm"
-  version "2.0.1"
+  version "v2.0.1"
   license "Apache-2.0"
 
   livecheck do

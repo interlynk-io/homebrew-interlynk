@@ -5,7 +5,7 @@
 class Sbomqs < Formula
   desc "SBOM quality scoring and compliance assessment tool"
   homepage "https://github.com/interlynk-io/sbomqs"
-  version "2.0.3"
+  version "v2.0.3"
   license "Apache-2.0"
 
   livecheck do

@@ -5,7 +5,7 @@
 class Sbommv < Formula
   desc "SBOM transfer tool for moving SBOMs between systems"
   homepage "https://github.com/interlynk-io/sbommv"
-  version "0.0.10"
+  version "v0.0.10"
   license "Apache-2.0"
 
   livecheck do
