@@ -5,7 +5,7 @@
 class Sbomex < Formula
   desc "Search and download public SBOMs from Interlynk repository"
   homepage "https://github.com/interlynk-io/sbomex"
-  version "0.1.0"
+  version "v0.1.0"
   license "Apache-2.0"
 
   livecheck do
