@@ -15,24 +15,24 @@ class Sbomex < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/interlynk-io/sbomex/releases/download/v#{version}/sbomex-darwin-amd64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomex/releases/download/#{version}/sbomex-darwin-amd64", using: :nounzip
       sha256 "86f5735c5d0f083f952db87ba9233fb77b3290d766a72ef7b24c805360e3ed93"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomex/releases/download/v#{version}/sbomex-darwin-arm64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomex/releases/download/#{version}/sbomex-darwin-arm64", using: :nounzip
       sha256 "14c36bd8f98689bca18d931f6e0e6acae174bd40549ffb80b6bc820eef27a327"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/interlynk-io/sbomex/releases/download/v#{version}/sbomex-linux-amd64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomex/releases/download/#{version}/sbomex-linux-amd64", using: :nounzip
       sha256 "3340a317532155e9322522f24e11d80914e722bfc4a78dd1dcda156d2f779e84"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomex/releases/download/v#{version}/sbomex-linux-arm64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomex/releases/download/#{version}/sbomex-linux-arm64", using: :nounzip
       sha256 "a1e46aff23abb2300befc74c24f8240ccda2c0a5fabc68efb302f91a0fc4c1ae"
     end
   end

@@ -15,24 +15,24 @@ class Sbomqs < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Darwin_x86_64.tar.gz"
+      url "https://github.com/interlynk-io/sbomqs/releases/download/#{version}/sbomqs_#{version}_Darwin_x86_64.tar.gz"
       sha256 "16372a236821a97ccccb1f5c56f4a1621fe97a04e404548d718b6af0c6cc1085"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Darwin_arm64.tar.gz"
+      url "https://github.com/interlynk-io/sbomqs/releases/download/#{version}/sbomqs_#{version}_Darwin_arm64.tar.gz"
       sha256 "f34b79e3afabd0659e1b012e8ce1a51129dc894cbc5bad1209f0820c90c62d35"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Linux_x86_64.tar.gz"
+      url "https://github.com/interlynk-io/sbomqs/releases/download/#{version}/sbomqs_#{version}_Linux_x86_64.tar.gz"
       sha256 "47dc464dc1cbc91757db3ed2c16dd1fad7b2b3ab887601f288a530c33a2aa57c"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Linux_arm64.tar.gz"
+      url "https://github.com/interlynk-io/sbomqs/releases/download/#{version}/sbomqs_#{version}_Linux_arm64.tar.gz"
       sha256 "235e1a3e3717c5e6f9325f0ae89192bbd7eabaad6463123ee8409c3494e38567"
     end
   end
