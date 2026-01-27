@@ -15,24 +15,24 @@ class Sbomgr < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr-darwin-amd64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-darwin-amd64", using: :nounzip
       sha256 "9d0e6be70d01cd3bd24b715f14a12c60b6717feb449372bdcf00be88113bdcd9"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr-darwin-arm64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-darwin-arm64", using: :nounzip
       sha256 "d3562cd91a6cb7f7b35b4742e0138f173efe163ff7955401265ed726125cf922"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr-linux-amd64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-linux-amd64", using: :nounzip
       sha256 "c100d319d138eccab397629b6e190da360d51022902906ff643e6327900108ad"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr-linux-arm64", using: :nounzip
+      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-linux-arm64", using: :nounzip
       sha256 "660231259ea119a6a8c637f1e1a6ef95cf1cba76e0986f14b2fd95267a67fed4"
     end
   end

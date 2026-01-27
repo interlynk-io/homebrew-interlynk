@@ -15,24 +15,24 @@ class Sbomasm < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Darwin_x86_64.tar.gz"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/#{version}/sbomasm_#{version}_Darwin_x86_64.tar.gz"
       sha256 "ae71861d7f6a10e9313ed291b60fd9dabd39d21725607d241264f523a016dc96"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Darwin_arm64.tar.gz"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/#{version}/sbomasm_#{version}_Darwin_arm64.tar.gz"
       sha256 "a7499558b6189bcbcd98bcfb43abd16f1377505332fba2236449718b27366df3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Linux_x86_64.tar.gz"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/#{version}/sbomasm_#{version}_Linux_x86_64.tar.gz"
       sha256 "c2c026100b5407fe29fb04f2b4af3a999c53599d8718ff3e03fe276854be5c97"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Linux_arm64.tar.gz"
+      url "https://github.com/interlynk-io/sbomasm/releases/download/#{version}/sbomasm_#{version}_Linux_arm64.tar.gz"
       sha256 "ae90f7f275a5480b2631c34cdb01b88bec67f0f5443ce99d59442153fe2a6982"
     end
   end

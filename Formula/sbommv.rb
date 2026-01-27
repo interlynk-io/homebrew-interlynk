@@ -15,24 +15,24 @@ class Sbommv < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/interlynk-io/sbommv/releases/download/v#{version}/sbommv-darwin-amd64", using: :nounzip
+      url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-darwin-amd64", using: :nounzip
       sha256 "466f3512e56ba78bddcb3681a32dbe236c652a4774e3d42ff531eefac3d4a492"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbommv/releases/download/v#{version}/sbommv-darwin-arm64", using: :nounzip
+      url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-darwin-arm64", using: :nounzip
       sha256 "d0396368419c43caa9f4fd8b64e71c2526f4480c2171dfe165ff084d2bbdf078"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/interlynk-io/sbommv/releases/download/v#{version}/sbommv-linux-amd64", using: :nounzip
+      url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-linux-amd64", using: :nounzip
       sha256 "f80e2f8aa66f33385bba584a0ce45329d20b30b540594f86ba5a74c290c4df2c"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbommv/releases/download/v#{version}/sbommv-linux-arm64", using: :nounzip
+      url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-linux-arm64", using: :nounzip
       sha256 "05d323993ce85bfb05ef37344a0dda31ac5255f7ff8086a258e37f4193e8b8ac"
     end
   end
