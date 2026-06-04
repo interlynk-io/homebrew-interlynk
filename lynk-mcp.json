@@ -1,0 +1,22 @@
+{
+    "version": "0.2.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/interlynk-io/lynk-mcp/releases/download/v0.2.2/lynk-mcp_0.2.2_Windows_x86_64.zip",
+            "bin": [
+                "lynk-mcp.exe"
+            ],
+            "hash": "b1f683c3417ecac197abf8f780d5d36966f80c3d4a22e2aedacc925953b43613"
+        },
+        "arm64": {
+            "url": "https://github.com/interlynk-io/lynk-mcp/releases/download/v0.2.2/lynk-mcp_0.2.2_Windows_arm64.zip",
+            "bin": [
+                "lynk-mcp.exe"
+            ],
+            "hash": "c0b6a74f4c30cd76becf9fdbc4571b3a557cdb829f76cb131a33ed7f87183e15"
+        }
+    },
+    "homepage": "https://github.com/interlynk-io/lynk-mcp",
+    "license": "Apache-2.0",
+    "description": "MCP server for Lynk SBOM and vulnerability management"
+}
