@@ -1,19 +1,19 @@
 {
-    "version": "0.2.2",
+    "version": "0.2.3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/interlynk-io/lynk-mcp/releases/download/v0.2.2/lynk-mcp_0.2.2_Windows_x86_64.zip",
+            "url": "https://github.com/interlynk-io/lynk-mcp/releases/download/v0.2.3/lynk-mcp_0.2.3_Windows_x86_64.zip",
             "bin": [
                 "lynk-mcp.exe"
             ],
-            "hash": "b1f683c3417ecac197abf8f780d5d36966f80c3d4a22e2aedacc925953b43613"
+            "hash": "f59d9183082eb9ed62f0918a19941013a04722dbfa6fec994d5a8ca836d28a62"
         },
         "arm64": {
-            "url": "https://github.com/interlynk-io/lynk-mcp/releases/download/v0.2.2/lynk-mcp_0.2.2_Windows_arm64.zip",
+            "url": "https://github.com/interlynk-io/lynk-mcp/releases/download/v0.2.3/lynk-mcp_0.2.3_Windows_arm64.zip",
             "bin": [
                 "lynk-mcp.exe"
             ],
-            "hash": "c0b6a74f4c30cd76becf9fdbc4571b3a557cdb829f76cb131a33ed7f87183e15"
+            "hash": "a75a1a9b21cad2337009ed9b82658cb2860c771006c805aabe1d83d61aa632b0"
         }
     },
     "homepage": "https://github.com/interlynk-io/lynk-mcp",
