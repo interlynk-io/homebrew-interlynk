@@ -5,7 +5,7 @@
 class Sbomasm < Formula
   desc "sbomasm: The Complete SBOM Management Toolkit"
   homepage "https://github.com/interlynk-io/sbomasm"
-  version "2.0.8"
+  version "2.0.9"
   license "Apache-2.0"
 
   livecheck do
@@ -16,24 +16,24 @@ class Sbomasm < Formula
   on_macos do
     on_intel do
       url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "3404666fb119b905141837c88f54d1da6b00816b2c268e4c2216925319228717"
+      sha256 "a082f93e623896960ec2b245b235a4305e411e52e4a4d762f5a8828fc198a1a1"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Darwin_arm64.tar.gz"
-      sha256 "1d6fe5b8dabec9c3155b2e59d3b7e84fdf21fc78937c7d387c18a5ae0f1ba72e"
+      sha256 "c2e4e11b5832d4cfaceedfa75f40844980c0aff9b2b1ca9e0ae0fa9c0887f8de"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Linux_x86_64.tar.gz"
-      sha256 "728773d389993e8030222ebe417bf1aa60d664adb222d6c7734936ba50bbe491"
+      sha256 "cad46ca96d14e75fd077b69afad6d9ae97f17777a7366a6e255506598011a8db"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/sbomasm/releases/download/v#{version}/sbomasm_#{version}_Linux_arm64.tar.gz"
-      sha256 "ac6ece29bd667d5719125452ee26e0c761a072b113e0466c08fc812914b805a4"
+      sha256 "7c0cd055fd248c413fe3a5141e405a84fd6bc374bac0cb25f0f024b5fcc8daa1"
     end
   end
 
