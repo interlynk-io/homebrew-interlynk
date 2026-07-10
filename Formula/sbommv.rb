@@ -5,7 +5,7 @@
 class Sbommv < Formula
   desc "SBOM Move - Automate build and transfer of SBOMs across systems"
   homepage "https://github.com/interlynk-io/sbommv"
-  version "v1.0.1"
+  version "v1.0.2"
   license "Apache-2.0"
 
   livecheck do
@@ -16,24 +16,24 @@ class Sbommv < Formula
   on_macos do
     on_intel do
       url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-darwin-amd64", using: :nounzip
-      sha256 "d8e8ab0a38f280247aa68319f208336fc62446d89e7826925569958b38a49dab"
+      sha256 "6591213fa6a178144acc1753b8f0b86c8593a37f80b6ae8008ecf1b1c7f94ce5"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-darwin-arm64", using: :nounzip
-      sha256 "1eea120937367a6ddc001a3268e4a34ea1a5a978e52434da473a32b1ad822db4"
+      sha256 "5bb8b7b3a604d59c2fae472a598d88e4777df8c86cbcadde3b4c1c479f1edcac"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-linux-amd64", using: :nounzip
-      sha256 "aa182cb48600c21e892638befb94be8599c3fa28d2d81d09163329dc29d1fd91"
+      sha256 "b318f70547f2d4edb9d3e532353824c737cf73ced18c5ae966df56de983898d5"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/sbommv/releases/download/#{version}/sbommv-linux-arm64", using: :nounzip
-      sha256 "d71bfcc7f7b474eeea23b97a1663b02e780bc870879815ff5d084aeca36fae12"
+      sha256 "47154f07689291738a33b7f4003dc2d0cee98030d31cddf783c512fe80e95218"
     end
   end
 
