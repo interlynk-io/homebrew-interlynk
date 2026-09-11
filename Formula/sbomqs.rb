@@ -5,7 +5,7 @@
 class Sbomqs < Formula
   desc "sbomqs: The Comprehensive SBOM Quality & Compliance Tool"
   homepage "https://github.com/interlynk-io/sbomqs"
-  version "2.1.1"
+  version "2.1.2"
   license "Apache-2.0"
 
   livecheck do
@@ -16,24 +16,24 @@ class Sbomqs < Formula
   on_macos do
     on_intel do
       url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "7e0e9813135577e5e65a604d2b7fa90e112b8258dbc633bc4cab102cc83049c5"
+      sha256 "669315b2e008ec935ca9d04c980ac05f747e0a7bd1acf3c767ab017fe47a70d3"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Darwin_arm64.tar.gz"
-      sha256 "0ef0e44af1ec4886e20f8123c61dd9131da9745ac71cfa472e3c640df2edb17e"
+      sha256 "cef45fcbdf12954cde0ff87c3740a0681d05e90d8c0cbee2e48e5e62b05d1c20"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Linux_x86_64.tar.gz"
-      sha256 "6943867fcffba4b1976d8fdc73f50d8ffc97a2449d762a216ae24433141a69d4"
+      sha256 "451c800019c81059f86eac2c1344c57572b3436e7e0ffeaa076459d195a39ab8"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/sbomqs/releases/download/v#{version}/sbomqs_#{version}_Linux_arm64.tar.gz"
-      sha256 "d1364810d2df378d0ffbda315dda80a91d6689354804f065b45b80ab6bdfe910"
+      sha256 "5aec2aec04610a76347301f6ce837c71e82001b26c27d9cd05c47f72a0ed9aa1"
     end
   end
 
