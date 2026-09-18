@@ -5,7 +5,7 @@
 class Sbomgr < Formula
   desc "Context-aware search tool for SBOMs"
   homepage "https://github.com/interlynk-io/sbomgr"
-  version "v1.0.1"
+  version "v1.0.2"
   license "Apache-2.0"
 
   livecheck do
@@ -15,32 +15,30 @@ class Sbomgr < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-darwin-amd64", using: :nounzip
-      sha256 "9d0e6be70d01cd3bd24b715f14a12c60b6717feb449372bdcf00be88113bdcd9"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr_#{version}_Darwin_x86_64.tar.gz"
+      sha256 "02cf398a5aa65ff794dbe3ed55ea0ebf8490832fb24175ca9680c86bff9f9b37"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-darwin-arm64", using: :nounzip
-      sha256 "d3562cd91a6cb7f7b35b4742e0138f173efe163ff7955401265ed726125cf922"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr_#{version}_Darwin_arm64.tar.gz"
+      sha256 "d7bda36f4546248e890843ba28c7c4fb3d0c6fc1c3fcba81fbfcca1d6c1e678d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-linux-amd64", using: :nounzip
-      sha256 "c100d319d138eccab397629b6e190da360d51022902906ff643e6327900108ad"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr_#{version}_Linux_x86_64.tar.gz"
+      sha256 "950e1f93c02fab124717ceb9cb895c93ebb90ab0f0e914a2bbbff1896fba3782"
     end
 
     on_arm do
-      url "https://github.com/interlynk-io/sbomgr/releases/download/#{version}/sbomgr-linux-arm64", using: :nounzip
-      sha256 "660231259ea119a6a8c637f1e1a6ef95cf1cba76e0986f14b2fd95267a67fed4"
+      url "https://github.com/interlynk-io/sbomgr/releases/download/v#{version}/sbomgr_#{version}_Linux_arm64.tar.gz"
+      sha256 "9c436ac1a3787753e07607e281f83c5cd0b0cbf4e6af541603884e0bbed28588"
     end
   end
 
   def install
-    os = OS.mac? ? "darwin" : "linux"
-    arch = Hardware::CPU.arm? ? "arm64" : "amd64"
-    bin.install "sbomgr-#{os}-#{arch}" => "sbomgr"
+    bin.install "sbomgr"
     generate_completions_from_executable(bin/"sbomgr", "completion")
   end
 
