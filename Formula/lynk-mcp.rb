@@ -5,7 +5,7 @@
 class LynkMcp < Formula
   desc "MCP server for AI-powered SBOM and vulnerability management"
   homepage "https://github.com/interlynk-io/lynk-mcp"
-  version "0.1.5"
+  version "0.2.6"
   license "Apache-2.0"
 
   livecheck do
@@ -16,24 +16,24 @@ class LynkMcp < Formula
   on_macos do
     on_intel do
       url "https://github.com/interlynk-io/lynk-mcp/releases/download/v#{version}/lynk-mcp_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "7ff8b0de982c570612d8d7dfab2e87c79f332029140cf933473e63cb31989172"
+      sha256 "ecc4b44764dae26adbe5ee8e727be5876fcee01b690534e48819076f86e888e5"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/lynk-mcp/releases/download/v#{version}/lynk-mcp_#{version}_Darwin_arm64.tar.gz"
-      sha256 "e9ed9b5c27942408772120b8e3b5d43c1d84c9ce7f74e866c6d989831a6219d0"
+      sha256 "acc32ec7c73b6a3facbc1e74db0c836b7562865266c329b8050b409950bacf83"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/interlynk-io/lynk-mcp/releases/download/v#{version}/lynk-mcp_#{version}_Linux_x86_64.tar.gz"
-      sha256 "bc1eaa5000b15c560c7b82f4fd990e0a733382bfd4caaa939936254b2f7209aa"
+      sha256 "1d818b7659b8f5a33ca1e3a4b5ef1392029e1a69ce9ec07e733890e4bfca03b9"
     end
 
     on_arm do
       url "https://github.com/interlynk-io/lynk-mcp/releases/download/v#{version}/lynk-mcp_#{version}_Linux_arm64.tar.gz"
-      sha256 "916912fdece41a388b6fdaccd2f4e6539b001412c4ef6a380848deadbafb29e6"
+      sha256 "81ce6f3170cd2caa06747a2b1430b715647d508cc180303101dabe7d277f5f59"
     end
   end
 
