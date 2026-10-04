@@ -5,7 +5,7 @@
 class Sbomgr < Formula
   desc "Context-aware search tool for SBOMs"
   homepage "https://github.com/interlynk-io/sbomgr"
-  version "v1.0.2"
+  version "1.0.2"
   license "Apache-2.0"
 
   livecheck do
